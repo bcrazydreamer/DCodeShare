@@ -26,7 +26,7 @@ app.post("/login",function(req,res)
   var data=req.body;
   var unam=data.username.toLowerCase();
   var pass=data.password;
-  if(unam=="admin" && pass=="dreamer"){
+  if(unam=="admin" && pass=="qwerty"){
     loggeduser=requestIp.getClientIp(req);
     res.status(300).sendFile(path.join(__dirname,"logintemp.html"));
     loginstatus=true;
