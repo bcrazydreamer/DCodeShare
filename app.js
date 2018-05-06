@@ -31,7 +31,7 @@ app.post("/login",function(req,res)
     res.status(300).sendFile(path.join(__dirname,"logintemp.html"));
     loginstatus=true;
   }
-  else if(pass=="dreamer")
+  else if(pass=="qwerty")
   {
     if(unam!="admin")
     {
