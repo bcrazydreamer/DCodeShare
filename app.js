@@ -132,7 +132,7 @@ app.post("/sender",function(req,res){
 
   fs.writeFile('public/value.js', 'dataval="'+txt+'";' , function (err) {});
           
-  //res.status(300).sendFile(path.join(__dirname,"test.html"));
+  res.status(300).sendFile(path.join(__dirname,"sender.html"));
 });
 
 //--------------------------------------------------------------------------------------------------------
